@@ -5,22 +5,22 @@ function convert()
     let type = document.getElementById("type").value;
     let convertTo = document.getElementById("convertTo").value;
 
-    // celcius code
+    // celsius code
 
 
-    if (type == "celcius" && convertTo == "fahrenheit")
+    if (type == "celsius" && convertTo == "fahrenheit")
     {
         let fahrenheit = (temp * 1.8) + 32;
         let result = fahrenheit.toFixed(4);
         document.getElementById("result").innerText = result + " F";
     }
-    if (type == "celcius" && convertTo == "kelvin")
+    if (type == "celsius" && convertTo == "kelvin")
     {      
         let kelvin = (temp-32)+273.15+32;
         let result = kelvin.toFixed(4);
         document.getElementById("result").innerText = result + " K";
     }
-    if (type == "celcius" && convertTo == "celcius")
+    if (type == "celsius" && convertTo == "celsius")
     {
         document.getElementById("result").innerText = "Degree's are Same no need to convert";
     }
@@ -28,7 +28,7 @@ function convert()
 
     // fahrenheit code
 
-    if (type == "fahrenheit" && convertTo == "celcius")
+    if (type == "fahrenheit" && convertTo == "celsius")
     {
         let celcius = (temp - 32) / 1.8;
         let result = celcius.toFixed(4);
@@ -48,7 +48,7 @@ function convert()
 
     // Kelvin code
 
-    if (type == "kelvin" && convertTo == "celcius" ) 
+    if (type == "kelvin" && convertTo == "celsius" ) 
     {
         let celcius = (temp - 273.15);
         let result = celcius.toFixed(4);
